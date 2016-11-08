@@ -1,4 +1,4 @@
-# Exercices JQuery - Partie 2
+# js-exercises-base2
 
 **IMPORTANT**
 Toutes les ressources aux exercices sont fournis.
