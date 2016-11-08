@@ -6,9 +6,12 @@
     <title>Exercice 2</title>
   </head>
   <body>
-      <img src="images/image.jpg" id="image" />
+      <img ondblclick="taille()" src="images/image.jpg" id="image" />
       <script>
-
+          function taille() {
+              var img = document.getElementById('image');
+              img.style.width = "500px";
+          }
       </script>
   </body>
 </html>

@@ -51,11 +51,11 @@
   <li>PHP</li>
   <li>...</li>
 </ul>
-<button id="button">faire disparaitre</button>
-<button id="boutton">afficher texte</button>
-<button id="button1">changer la couleur</button>
-<button id="button2">changer font-family</button>
-<button id="button3">Ont fait le menage</button>
+<button onclick="message()" id="button">faire disparaitre</button>
+<button onclick="message()" id="boutton">afficher texte</button>
+<button onclick="message()" id="button1">changer la couleur</button>
+<button onclick="message()" id="button2">changer font-family</button>
+<button onclick="message()" id="button3">Ont fait le menage</button>
 <script>
   $('#button').click(function(){
     $('p').hide();
@@ -83,6 +83,11 @@
   $('#button3').click(function(){
     $('#texte_2').hide();
   });
+</script>
+<script>
+    function message() {
+        alert("texte modifier");
+    }
 </script>
 
 

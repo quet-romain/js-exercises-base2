@@ -7,12 +7,24 @@
 </head>
 <body>
   <form>
-    <label for="nom">Nom : </label><input type="text" name="nom" value="" id="nom" />
-    <label for="prenom">Prénom : </label><input type="text" name="prenom" value="" id="prenom" />
+    <label for="nom">Nom : </label><input onfocus="input1focusint()" onfocusout="input1focusout()" type="text" name="nom" value="" id="nom" />
+    <label for="prenom">Prénom : </label><input onfocus="input2focusint()" onfocusout="input2focusout()" type="text" name="prenom" value="" id="prenom" />
     <button type="button" name="button" >Envoyer</button>
   </form>
   <script>
-
+      function input1focusint() {
+          document.getElementById('nom').style.borderColor = 'green';
+      }
+      function input1focusout() {
+          document.getElementById('nom').style.borderColor = 'red';
+      }
+      
+      function input2focusint() {
+          document.getElementById('prenom').style.borderColor = 'green';
+      }
+      function input2focusout() {
+          document.getElementById('prenom').style.borderColor = 'red';
+      }
   </script>
 </body>
 </html>
